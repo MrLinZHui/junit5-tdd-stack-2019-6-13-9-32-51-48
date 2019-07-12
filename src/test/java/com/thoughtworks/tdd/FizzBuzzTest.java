@@ -126,5 +126,16 @@ public class FizzBuzzTest {
         //Then
         Assertions.assertEquals("BuzzWhizz",result);
     }
+    @Test
+    public void shoud_return_FizzBuzzWhizz_when_number_is_0(){
+        //Given
+        int number = 0;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //When
+        String result =fizzBuzz.convert(number);
+
+        //Then
+        Assertions.assertEquals("FizzBuzzWhizz",result);
+    }
 
 }
